@@ -3,7 +3,7 @@ import cv2
 
 #path = "d:/_temp/"
 path = ""
-filename = "sample.png"
+filename = "sample1.jpg"
 cascade_filename = "haarcascade_frontalface_alt.xml"
 
 #Read images from File

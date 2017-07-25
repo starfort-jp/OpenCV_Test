@@ -13,7 +13,7 @@ Usage: opencv_createsamples.exe
   [-maxxangle  <max_x_rotation_angle = 1.100000>]・・・ｘ方向回転角の最大値(rad)
   [-maxyangle  <max_y_rotation_angle = 1.100000>]・・・ｙ方向回転角の最大値(rad)
   [-maxzangle  <max_z_rotation_angle = 0.500000>]・・・ｚ方向回転角の最大値(rad)
-  [-show [ <scale = 4.000000>]]・・・・・・・・・・・・変形させた正解画像の確認ウィンドウを表示
+  [-show [ <scale = 4.000000>]]・・・・・・・・・・・・変形させたポジティブ画像の確認ウィンドウを表示
   [-w  <sample_width = 24>]・・・・・・・・・・・・・・ベクトル画像の幅
   [-h  <sample_height = 24>] ・・・・・・・・・・・・・ベクトル画像の高さ
 opencv_createsamples.exe -img D:\Data\OpenCV\ObjectDetector\Positive\Starfort1.jpg -vec D:\Data\OpenCV\ObjectDetector\Vector\Starfort.vec -num 100 -bgcolor 255 -maxidev 40 -maxxangle 0.8 -maxyangle 0.8 -maxzangle 0.5 -show -w 64 -h 64
@@ -48,8 +48,8 @@ Usage: opencv_traincascade.exe
   [-minHitRate <min_hit_rate = 0.995>] ・・・・・・・・・・・・・・・・・各ステージでの最小ヒット率
   [-maxFalseAlarmRate <max_false_alarm_rate = 0.5>]・・・・・・・・・・・各ステージでの偽判定警告の最大識別率
   [-weightTrimRate <weight_trim_rate = 0.95>]・・・・・・・・・・・・・・トリミング率
-  [-maxDepth <max_depth_of_weak_tree = 1>] ・・・・・・・・・・・・・・・弱検出器の深さの最大値
-  [-maxWeakCount <max_weak_tree_count = 100>]・・・・・・・・・・・・・・弱検出器のツリー数
+  [-maxDepth <max_depth_of_weak_tree = 1>] ・・・・・・・・・・・・・・・弱検出器ツリーの深さ（最大値）
+  [-maxWeakCount <max_weak_tree_count = 100>]・・・・・・・・・・・・・・弱検出器ツリー数
 --haarFeatureParams--
   [-mode <BASIC(default) | CORE | ALL>]
 --lbpFeatureParams--
